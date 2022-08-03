@@ -1,0 +1,31 @@
+table PodData {
+  battery_pack_current: float32 = null;
+  average_cell_temperature: float32 = null;
+  igbt_temp: float32 = null;
+  motor_voltage: float32 = null;
+  battery_pack_voltage: float32 = null;
+  state_of_charge: float32 = null;
+  buck_temperature: float32 = null;
+  bms_current: float32 = null;
+  link_cap_voltage: float32 = null;
+  mc_pod_speed: float32 = null;
+  motor_current: float32 = null;
+  battery_current: float32 = null;
+  battery_voltage: float32 = null;
+  speed: float32 = null;
+  current_5v: float32 = null;
+  current_12v: float32 = null;
+  current_24v: float32 = null;
+  torchic_1: [float32];
+  torchic_2: [float32];
+  pressure_high: float32 = null;
+  pressure_low_1: float32 = null;
+  pressure_low_2: float32 = null;
+  roboteq_motor_1_speed: float64 = null;
+  roboteq_motor_2_speed: float64 = null;
+  roboteq_motor_1_battery_amps: int16 = null;
+  roboteq_motor_2_battery_amps: int16 = null;
+  roboteq_mcu_temp: int8 = null;
+  roboteq_sensor_1_temp: int8 = null;
+  roboteq_sensor_2_temp: int8 = null;
+}

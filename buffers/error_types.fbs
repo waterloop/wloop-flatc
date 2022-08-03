@@ -1,0 +1,8 @@
+enum UdpErrno: ubyte {
+  NoError,
+  InvalidTransitionRequest,
+  ArmingFault,
+  ControllerTimeout,
+  GeneralPodFailure,
+  UnknownError
+}

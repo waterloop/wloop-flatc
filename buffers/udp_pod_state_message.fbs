@@ -1,0 +1,14 @@
+include "pod_state.fbs";
+include "error_types.fbs";
+include "pod_data.fbs";
+
+table UdpPodStateMessage {
+    current_state: PodState;
+    pending_next_state: PodState;
+    errno: UdpErrno;
+    telemetry: PodData;
+    telemetry_timestamp: int64 = null;
+    recovering: bool = false;
+}
+
+root_type UdpPodStateMessage;
