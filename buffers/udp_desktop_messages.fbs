@@ -1,0 +1,7 @@
+include "pod_state.fbs";
+namespace Wloop;
+
+table UdpDesktopMessage {
+  requested_state: PodState = Resting;
+  most_recent_timestamp: int64;
+}

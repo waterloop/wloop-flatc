@@ -1,0 +1,16 @@
+namespace Wloop;
+
+enum PodState : ubyte {
+  Resting                 = 0,
+  LowVoltage              = 1,
+  Armed                   = 2,
+  AutoPilot               = 3,
+  Braking                 = 4,
+  EmergencyBrake          = 5,
+  SystemFailure           = 6,
+  ManualOperationWaiting  = 7,
+  Accelerating            = 8,
+  AtSpeed                 = 9,
+  Decelerating            = 10,
+  Invalid                 = 11
+}
